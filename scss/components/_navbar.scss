@@ -1,0 +1,88 @@
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2000;
+
+    nav{
+        box-shadow: 0 5px 25px rgb(2, 0, 0),
+                    0 5px 50px rgb(27, 10, 10);
+                  
+        .navbar__menu{
+            flex-direction:column;
+            justify-content: space-around;
+            align-items:center;
+            height: 70vh;         
+            display:none;
+            opacity:0;
+            transition: opacity 5s ease-out;
+
+            .navbar__list{
+                text-align:center;
+                list-style-type: none;
+                transition: 0.3s;
+
+                .navbar__link{
+                    text-decoration:none;
+                    font-size: 2rem;
+                    color:black;
+                    font-weight:600;
+                }
+            }
+        }
+
+        .navbar__btn{
+            background-color:transparent;
+            border:none;
+            display:block;
+            cursor:pointer;
+            position: absolute;
+            top: 30px; 
+            right: 25px;
+            transition: 0.2s  0.1s; 
+
+            span{
+                background-color: black;
+                display:block;
+                height:3px;
+                width: 28px;
+                margin:10px auto;
+                border-radius:2px;    
+            }
+        }
+        
+    }
+}
+
+@keyframes muestraMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    0% {
+        transform: translateX(100%);
+    }
+    
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.navbar__menu.activado{
+    display:flex; 
+    animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+}
+  
+.br-2.animado{
+    opacity: 0;
+}
+
+.br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+}
+
+.navbar__btn:hover{
+    transform:rotate(180deg);
+ }
