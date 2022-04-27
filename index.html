@@ -4,9 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+    crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Flow Barber</title>
 </head>
 <body>
+
+    <header>
+        <nav>
+            <a href="#">
+                <img class="navbar__logo" src="/img/logo.png" alt="Logo" height="110px" width="120px">
+            </a>
+            <ul class="navbar__menu">
+                <li class="navbar__list">
+                    <a class="navbar__link"
+                        href="#">Inicio</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link"
+                        href="#">Servicios</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link"
+                        href="#">Galeria</a>
+                </li>
+                <li class="navbar__list">
+                    <a class="navbar__link"
+                        href="#about2">Quienes somos</a>
+                </li>
+            </ul>
+           
+            
+            <button class="navbar__btn"
+                type="button">
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>
+        </nav>
+    </header>
     
+    <main>
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="carrusel-img">Veni a conocernos</p>
+                        <img src="img/wallpaper1.jpg" class="d-block w-100 height" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <p class="carrusel-img">Estamos en Yrigoyen 817</p>
+                        <img src="img/wallpaper2.jpg" class="d-block w-100 height" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <p class="carrusel-img">Somos Flow Barber</p>
+                        <img src="img/wallpaper3.jpg" class="d-block w-100 height" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="about2"></section>
+
+        <section id="about">
+            <div class="container1">
+                <h1 class="container__title1">¿Quienes somos?</h1>
+                <p class="container__text1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora tenetur tempore maxime esse, dolorem nostrum officiis assumenda molestiae eligendi autem consequuntur dolores voluptatum fugit harum culpa rerum facere sapiente quo velit eum commodi maiores vero? Ea, eligendi nostrum!</p>
+            </div>
+
+            <div class="container2">
+                <div>
+                    <img class="container__img2" src="./img/logo.png" alt="">
+                    <p class="container__text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis praesentium illo debitis, libero vitae tempora.</p>
+                </div>
+                
+                <div>
+                    <img class="container__img2" src="./img/logo.png" alt="">
+                    <p class="container__text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis praesentium illo debitis, libero vitae tempora.</p>
+                </div>
+            </div>
+
+            <div class="container3">
+                <h2 class="container__title3">¿Dónde nos encontramos?</h2>
+                <div class="container-grid3">
+                    <p class="container__text3">Nos encontramos en Yirigoyen 817, entre Brasil y Santa Fé.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.898318683754!2d-58.72647388423548!3d-34.65727076784168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfe84301f105%3A0xe3177fec812f2228!2sAv.%20Hip%C3%B3lito%20Yrigoyen%20817%2C%20B1722JLU%20Merlo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1651024811812!5m2!1ses-419!2sar" 
+                    width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="container1">
+                <h1 class="container__title1">¿Cómo reservar turno?</h1>
+                <p class="container__text1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit eos vero reprehenderit laboriosam aperiam, earum voluptates sint tempore. Neque deserunt nulla temporibus illum !</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &#169 FlowBarber</p>
+        <a class="contacto__link" href="https://www.instagram.com/flowbarberok/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a class="contacto__link" href="https://www.facebook.com/pages/Flow-Barber-Marcelo-Esequiel/188970684927386" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
+
