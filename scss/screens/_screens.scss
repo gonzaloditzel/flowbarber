@@ -1,3 +1,50 @@
+@import "../commons/commons";
+
+@media (min-width: 600px) {
+    #main-container{
+        .about{
+            margin: 30px auto;
+    
+            h2{
+                @include text(4rem, 500);
+            }
+            p{
+                @include text(2rem, 400);
+                width: 500px;
+                margin: auto;
+            }
+        }
+
+        .about-card{
+            @include flex(flex, center, space-evenly);
+
+            img{
+                height: 220px;
+                width: 240px;
+            }
+
+            p{
+                @include text(2rem, 400);
+            }
+        }
+        
+        .container-location{
+            margin: 30px 0;
+            h2{
+                @include text(4rem, 500);
+            }
+            .location{
+                @include flex(flex, center, center);
+                margin: 30px auto;
+                p{
+                    @include text(2rem, 400);
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1024px){
 
     header{
@@ -38,80 +85,59 @@
 
     footer{
         p{
-            font-size: 3rem;
+            @include text(3rem, 500);
         }
     
         .contacto__link{
-            font-size: 3rem
+            @include text(3rem, 500);
         }
     }
 
     #carouselExampleIndicators{
         .carousel-item{
             .carrusel-img{
+                @include text(5rem, 500);
                 margin: 24vh auto auto auto;
-                font-size: 5rem;
                 width: 600px;
+                -webkit-text-stroke: 3px black;
             }
             .height {
-                height: 68vh;       
+                height: 70vh;       
             }
         }
     }
 
-    #about2{
-        height: 16vh;
-        background-color: black;
-
-        .about2__text{
-            display: flex;
-            justify-content: center;
-            color: white;
-        }
-    }
-
-    #about{
-        .container1{
-            margin-bottom: 80px;
-            text-align: center;
-    
-            .container__title1{
-                font-size: 5rem !important;
+    #main-container{
+        .about{    
+            h2{
+                @include text(5rem, 500);
             }
-            .container__text1{
-                margin: auto;
-                width: 900px;
-                font-size: 2rem !important;
+            p{
+                @include text(2.2rem, 400);
+                width: 800px;
             }
         }
 
-        .container2{
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
+        .about-card{
 
-            .container__img2{
-                height: 300px;
-                width: 320px;
+            img{
+                height: 270px;
+                width: 290px;
             }
 
-            .container__text2{
-                font-size: 2.2rem !important;
-                width: 400px;
+            p{
+                @include text(2.2rem, 400);
+                width: 500px;
             }
         }
         
-        .container3{
-            margin: 60px;
-            .container__title3{
-                font-size: 5rem !important;
+        .container-location{
+            h2{
+                @include text(5rem, 500);
             }
-            .container-grid3{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .container__text3{
-                    font-size: 2rem !important;
+            .location{
+                p{
+                    @include text(2.2rem, 400);
                 }
             }
         }
