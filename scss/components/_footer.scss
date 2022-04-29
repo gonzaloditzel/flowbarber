@@ -4,9 +4,11 @@ footer{
     align-items: center;
     height: 10vh;
     background-color: rgb(136, 94, 94);
+    border-top: 2px solid black;
 
     p{
-        font-size: 2rem;
+        @include text(2rem, 500);
+        color: black;
         margin: 0;
     }
 
